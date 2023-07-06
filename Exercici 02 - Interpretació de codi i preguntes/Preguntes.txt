@@ -1,0 +1,19 @@
+1. Pots descriure el procés que realitza aquest procediment? Digues per què que pot servir.
+2. Digues quins problemes pot haver-hi en la seva execució i com els corregiries (descriure, no programar-ho).
+3. Indica com modificaries el procediment perquè fos més genèric.
+
+
+1. Resumidamente, es el proceso que se realiza al tocar un boton. Lo que hace es recibir un archivo en formato CSV, que luego envía a un directorio y recorre el directorio leyendo todos los archivos y convirtiendolos a XML. Finalmente lo que se obtiene son directorios, uno con los archivos en Formato CSV y otro en formato XML. 
+Esto sirve en casos en los que se necesita procesar datos, ya que los archivos XML son más recomendados para el procesamiento y análisis de datos complejos. 
+
+2. Se pueden generar errores en las rutas de los directorios, por lo que se podrían validar primero que existan, al igual que se podrían tener precausiones en caso de que los cambios de formatos den algun error (por ejemplo con JS se podria utilizar un Try Catch para agarrar el error en caso de que ocurra)
+
+3. En lugar de utilizar las funciones específicas de archivos de VB.NET, podrian utilizarse funciones que estén disponibles en más lenguajes de programación. 
+Tambien podría separarse la funcion en varias funciones que realicen tareas más pequeñas.
+y como en la respuesta anterior, yo intentaría tener un mejor manejo de errores para que en caso de que eso ocurra, no se rompa toda la página.
+
+Redacta-ho i fes-nos-ho arribar a merigil@doceosoftware.com
+Assumpte: Respostes exercici 1 + el teu nom.
+
+Pots obrir l'arxiu del programa amb Notepad++ o altres editors de codi. 
+Per Notepad cal anar a “Lenguage  v  visual Basic”, ensenya el codi d’una forma més clara.

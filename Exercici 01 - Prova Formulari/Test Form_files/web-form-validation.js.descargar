@@ -1,0 +1,39 @@
+$(document).ready( 
+	function () {
+		$("form[data-validation-method='standard']").each(function() {
+			var config = new Object();
+			config.rules = new Object();
+			config.messages = new Object();
+			config.errorElement = "small";
+			
+			config.errorPlacement = function(error, element) {
+				var span = $(element).filter("input[type='checkbox']").siblings("span");
+				if (span.length > 0) {
+					error.addClass("checkbox");
+					span.first().after(error);
+				} else {
+					element.after(error);
+				}
+			};
+			
+			$("input[data-validation], textarea[data-validation]", this).each(function() {
+				try {
+					config.rules[$(this).attr("name")] = JSON.parse($(this).attr("data-validation"));
+				} catch (e) {
+					// Parser error
+				}
+			});
+			
+			$("input[data-custom-message], textarea[data-custom-message]", this).each(function() {
+				try {
+					if ($(this).attr("data-custom-message").length > 0) {
+						config.messages[$(this).attr("name")] = $(this).attr("data-custom-message");
+					}
+				} catch (e) {
+					// Parser error
+				}
+			});
+			
+			$(this).validate(config);
+		});
+});

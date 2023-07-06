@@ -1,0 +1,8 @@
+Test Form:
+
+1. Expand section image resource is missing
+
+2. Expand section on click should be working
+
+3. "Dispatch received on" button does not show actual Date and Time
+

@@ -1,0 +1,133 @@
+fieldset {
+    margin: 0px 0px 20px;
+    padding: 0px;
+    border: 0px none;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="number"], input[type="date"], textarea, select {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 6px 4px;
+    outline: medium none;
+    border-radius: 2px 2px 2px 2px;
+    color: rgb(68, 68, 68);
+    margin: 0px 0px 20px;
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    font: 13px sans-serif;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="number"]:focus, input[type="date"]:focus, textarea:focus {
+    border: 1px solid rgb(170, 170, 170);
+    color: rgb(68, 68, 68);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+select {
+    padding: 0px;
+}
+textarea {
+    min-height: 60px;
+}
+label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 21px;
+}
+small.error {
+    color: rgb(255, 0, 0);
+    font-weight: normal;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: block;
+}
+small.error.checkbox {
+    margin-top: 0px;
+}
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    border-radius: 3px 3px 3px 3px;
+    padding: 0.75em;
+    width: auto;
+    border: 0px none;
+    margin: 0.5em;
+    text-shadow: 0px 1px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+    background: none repeat scroll 0% 0% rgb(238, 238, 238);
+}
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    color: rgb(34, 34, 34);
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+label span {
+    font-weight: normal;
+    font-size: 13px;
+    color: rgb(68, 68, 68);
+}
+label span.required {
+    color: rgb(255, 0, 0);
+}
+.erf_switch {
+    border-radius: 3px 3px 3px 3px;
+    padding-top: 0.75em;
+    padding-left: 0.75em;
+    padding-bottom: 0.75em;
+    padding-right: 0.75em;
+    width: auto;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-style: none;
+    border-right-style: none;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    text-shadow: 0px 1px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    color: White;
+    background-color: rgb(0, 140, 186);
+    background-image: url("toggle-expand-alt_basic_blue.png");
+    background-repeat: no-repeat;
+
+}
+
+.erf_expand {
+    border-radius: 3px 3px 3px 3px;
+    padding-top: 0.75em;
+    padding-left: 0.75em;
+    padding-bottom: 0.75em;
+    padding-right: 0.75em;
+    width: auto;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-style: none;
+    border-right-style: none;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    text-shadow: 0px 1px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    color: White;
+    background-color: rgb(0, 140, 186);
+    background-image: url("toggle-collapse-alt_basic_blue.png");
+    background-repeat: no-repeat;
+
+}
+
+#timeStamp {
+    border-radius: 3px 3px 3px 3px;
+    padding-left: 1.25em;
+    padding-right: 0.75em;
+    width: 12em;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-style: none;
+    border-right-style: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: White;
+    background-color: rgb(0, 140, 186);
+}
+
+
